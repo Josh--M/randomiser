@@ -1,0 +1,42 @@
+<head>
+<title>Page Randomizer</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+setTimeout(function() {
+var howMany = 8; 
+var page = new Array(howMany+1);
+
+page[0]="http://www.camden.gov.uk/";
+page[1]="http://www.camden.gov.uk/housing";
+page[2]="http://www.camden.gov.uk/parking";
+page[3]="http://www.camden.gov.uk/green";
+page[4]="http://www.camden.gov.uk/jobs";
+page[5]="http://www.camden.gov.uk/roadrisk";
+page[6]="http://www.camden.gov.uk/hs2impacts";
+page[7]="http://www.camden.gov.uk/planning";
+page[8]="http://www.camden.gov.uk/careact";
+
+
+
+function rndnumber(){
+var randscript = -1;
+while (randscript < 0 || randscript > howMany || isNaN(randscript)){
+randscript = parseInt(Math.random()*(howMany+1));
+}
+return randscript;
+}
+quo = rndnumber();
+quox = page[quo];
+window.location=(quox);
+}, 10);
+// End -->
+</SCRIPT>
+</HEAD>
+
+<p><center>
+Loading...
+</center><p>
+
+</body>
+</html>
